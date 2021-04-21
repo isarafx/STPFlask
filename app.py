@@ -12,5 +12,9 @@ def home():
 def about():
     return "Hello, about page"
 
+@app.route('/script')
+def test_script():
+    return render_template('test-script.html')
+
 if __name__ == '__main__':
     app.run(debug=True)
